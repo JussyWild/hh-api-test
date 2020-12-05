@@ -1,0 +1,9 @@
+.idea/
+.vs/
+**/obj/
+**/bin/
+**/TestResults/
+*.log
+*.DotSettings.user
+**/log.txt
+**/.dll
