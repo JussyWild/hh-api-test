@@ -14,6 +14,6 @@ namespace ApiTest.Models
         public string Currency { get; set; }
 
         [JsonPropertyName("gross")]
-        public bool Gross { get; set; }
+        public bool? Gross { get; set; }
     }
 }
