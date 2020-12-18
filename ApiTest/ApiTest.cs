@@ -41,7 +41,7 @@ namespace ApiTest
         }
 
         [Fact]
-        public async Task TestGet_WithHHUserAgentNoAuthorizationToken_ShouldReturnBadRequest()
+        public async Task NegativeTestGet_WithHHUserAgentNoAuthorizationToken_ShouldReturnBadRequest()
         {
             _client.DefaultRequestHeaders.Authorization = null;
             var resp = await _client.GetAsync(_baseUrl);
@@ -50,7 +50,7 @@ namespace ApiTest
         }
 
         [Fact]
-        public async Task TestGet_WithUserAgentNoAuthorizationToken_ShouldReturnBadRequest()
+        public async Task NegativeTestGet_WithUserAgentNoAuthorizationToken_ShouldReturnBadRequest()
         {
             _client.DefaultRequestHeaders.Clear();
             _client.DefaultRequestHeaders.Add("User-Agent",
